@@ -1,0 +1,10 @@
+package main
+import "fmt"                      //file scoped only visible in this file
+
+const ok = true                  // visible to all the files belong to the package
+
+func main(){
+    var hello = "Hello!"         // block
+    fmt.Println(hello, ok)       //      scope 
+                                 //           declaration
+}
